@@ -15,15 +15,21 @@ export const useSearchAirports = (shouldRedirect = false) => {
 
   // 🔍 Función para realizar la búsqueda de aeropuertos
   const handleSearch = async () => {
-    if (!query.trim()) return []; 
-
+    const { setAirports } = useAirportStore.getState();
+  
+    if (!query.trim()) {
+      setAirports([]);  
+      return [];
+    }
+  
     const formattedQuery = query.trim().toUpperCase(); 
     const searchType = /^[A-Z0-9]{4}$/.test(formattedQuery) ? "icao" : "name"; // Detectamos si es código ICAO o nombre
-
+  
     await fetchAirports(formattedQuery, searchType);
-
+  
     return useAirportStore.getState().airports; 
   };
+  
 
 
   const goBack = () => {
