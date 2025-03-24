@@ -30,7 +30,6 @@ const TimeZone: React.FC<timeZoneProps> = ({ timezone, region, }) => {
         </div>
 
         <div className="relative bg-gray-800 p-6 rounded-2xl flex justify-between items-center border-2 border-white h-[230px]">
-            {/* Contenedor de Información */}
             <div className="w-[70%]">
                 <h2 className="flex items-center gap-2 text-blue-400 text-3xl font-bold mb-8">
                 <Globe2 className="w-[55px] h-[55px] text-white" />
@@ -39,7 +38,6 @@ const TimeZone: React.FC<timeZoneProps> = ({ timezone, region, }) => {
                 <p className="text-white-400 mb-3"><span className="font-bold mr-2">Región:</span>{region}</p>
             </div>
 
-            {/* Contenedor de la imagen (30%) */}
             <div className="w-[30%] h-full absolute right-0 top-0 bottom-0">
                 <Image 
                     src="/airplane.jpg"

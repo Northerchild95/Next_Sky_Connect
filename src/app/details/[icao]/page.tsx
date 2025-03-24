@@ -15,7 +15,6 @@ const Page = () => {
 
   return (
     <div className="min-h-screen text-white flex flex-col items-center p-6">
-      {/* Botón de Volver */}
       <div className="self-start flex">
         <ButtonBack/>
       </div>

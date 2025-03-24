@@ -34,11 +34,11 @@ body {
 
 .overlay::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 50, 0.6); /* Azul oscuro con opacidad */
-  z-index: -1; /* Detrás del contenido */
+  height: 100%;
+  background: rgba(0, 0, 50, 0.6); 
+  z-index: -1; 
 }

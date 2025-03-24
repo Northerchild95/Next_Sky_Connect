@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
 
 const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     // Leer el estado guardado en localStorage

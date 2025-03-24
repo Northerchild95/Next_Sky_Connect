@@ -42,7 +42,7 @@ const Ubication: React.FC<UbicationProps> = ({ latitude, longitude, elevation_ft
       </div>
 
 
-      <div className="h-[766px] w-full mt-4">
+      <div className="h-[400px] md:h-[600px] lg:h-[766px] w-full mt-4">
         <MapContainer center={[latitude, longitude]} zoom={10} className="h-full w-full rounded-xl">
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
           <Marker position={[latitude, longitude]} icon={markerIcon}>

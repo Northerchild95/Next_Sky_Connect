@@ -18,12 +18,12 @@ const AirportCard: React.FC<AirportCardProps> = ({ airport }) => {
             src="/airplane.jpg"
             alt="Aeropuerto"
             fill
-            sizes="100vw"
+            sizes="50vw"
             className="object-cover opacity-40 rounded-r-2xl"
           />
         </div>
         <div className="absolute top-4 right-4 w-[55px] h-[55px] flex items-center justify-center shadow-md">
-          <Image sizes="100vw" src="/airplane-icon.png" alt="" />
+          <Image width={55} height={55} src="/airplane-icon.png" alt="airplane-icon" />
         </div>
       </div>
     </Link>
